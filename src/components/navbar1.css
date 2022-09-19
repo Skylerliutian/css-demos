@@ -12,7 +12,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  gap: 5rem;
+  /* gap: 5rem; */
   position: relative;
 }
 
@@ -68,6 +68,8 @@
   border-radius: 50%;
   background: #29fd53;
   border: 6px solid var(--clr);
+  left: calc(var(--left) * 70px);
+  transition: 0.3s;
 }
 .indicator::before {
   content: "";
