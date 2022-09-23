@@ -28,7 +28,6 @@ function App() {
   // }, 2000);
   return (
     <div className="App">
-      {/* <MagicLine /> */}
       <Collection />
     </div>
   );

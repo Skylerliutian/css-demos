@@ -1,0 +1,12 @@
+version: "2.4"
+services:
+  cssdemo:
+    # image: css
+    build: .
+    container_name: cssdemo_compose
+    volumes:
+      - ./build:/dist
+      - ./start.sh:/script
+    ports:
+      - "8081:80"
+    restart: always
