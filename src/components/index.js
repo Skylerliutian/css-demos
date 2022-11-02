@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <>
       {/* <NavBar></NavBar> */}
-      <ShakeEffect />
+      <DeleteButton />
       {/* <MagicLine /> */}
     </>
   );

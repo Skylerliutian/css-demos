@@ -1,0 +1,53 @@
+.btn {
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: #33374a;
+  display: flex;
+  justify-items: center;
+  padding-left: 25px;
+  gap: 16px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+.btn > span {
+  line-height: 50px;
+  opacity: var(--span-opacity, 1);
+  transition: 0.5s;
+}
+
+.btn img:nth-child(1) {
+  transform: translateX(var(--trash-transform, 0))
+    scale(var(--trash-scale, 0.8));
+  transition: 0.5s;
+}
+.btn .paper {
+  position: absolute;
+  left: 75px;
+  /* top: 0px; */
+  top: var(--paper-transform, -25px);
+  color: blue;
+  opacity: var(--paper-opacity, 0);
+  visibility: var(--paper-vis, visible);
+  transition: opacity 0.5s linear 0.5s, top 0.5s linear 1s,
+    visibility 0.5s linear 1s;
+}
+.btn .check {
+  position: absolute;
+  left: 75px;
+  top: 50px;
+  opacity: var(--check-opacity, 0);
+  transition: opacity 0.5s linear 1.5s;
+}
+
+.delete {
+  --span-opacity: 0;
+  --trash-transform: 50px;
+  --trash-scale: 1.5;
+  --paper-transform: 50px;
+  --paper-opacity: 1;
+  --check-opacity: 1;
+  --paper-vis: hidden;
+  --check-vis: visible;
+}
