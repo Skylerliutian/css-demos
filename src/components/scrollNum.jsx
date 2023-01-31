@@ -9,7 +9,7 @@ const ScrollNum = ({ num }) => {
   }, [num]);
   return (
     <>
-      <divw
+      <div
         className={`scroll-num ${showAnimate ? "border-animate" : ""}`}
         style={{ "--i": num, "--delay": 2 }}
         onAnimationEnd={() => {
@@ -29,7 +29,7 @@ const ScrollNum = ({ num }) => {
           <li>8</li>
           <li>9</li>
         </ul>
-      </divw>
+      </div>
     </>
   );
 };
